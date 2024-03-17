@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0045d2bb.css",
+    "main.js": "/static/js/main.6e392b9c.js",
+    "static/js/453.df772d1c.chunk.js": "/static/js/453.df772d1c.chunk.js",
+    "static/media/item12.png": "/static/media/item12.37a42e9db91499f9060d.png",
+    "static/media/item10.png": "/static/media/item10.fc8bdd843513d7c5f231.png",
+    "static/media/img2.png": "/static/media/img2.518ab69ab0280fd84fbe.png",
+    "static/media/img1.gif": "/static/media/img1.9680ed954f3da2a22272.gif",
+    "static/media/img4.png": "/static/media/img4.26ebdf98dea30a65cb59.png",
+    "static/media/javascript.png": "/static/media/javascript.3d07d32e9e204cb83e7f.png",
+    "static/media/item9.png": "/static/media/item9.0695a1b63f173c9b02ca.png",
+    "static/media/img5.png": "/static/media/img5.e998ac8d0c052950029b.png",
+    "static/media/item11.png": "/static/media/item11.8fb187cdd58b04fbe8ff.png",
+    "static/media/item13.png": "/static/media/item13.9b406cbee425156303e2.png",
+    "static/media/item8.png": "/static/media/item8.b4ee1506be53575918a4.png",
+    "static/media/img3.png": "/static/media/img3.ff8fc9f7a83d227d1674.png",
+    "static/media/fullstack.png": "/static/media/fullstack.16832299bf4287751d59.png",
+    "static/media/backend.png": "/static/media/backend.054450ece906b5b07709.png",
+    "static/media/css.jpg": "/static/media/css.8a0d2c1e98ba5a2cc11d.jpg",
+    "static/media/hot.png": "/static/media/hot.9854a99813cc5082b94b.png",
+    "static/media/react-logo.png": "/static/media/react-logo.248cd161b3e1123baa3e.png",
+    "static/media/bootstrap.png": "/static/media/bootstrap.1b0b9c34a73c467385e3.png",
+    "static/media/tiktok.png": "/static/media/tiktok.8a9452a0a4c037d9de63.png",
+    "static/media/frontend.png": "/static/media/frontend.cbf50ed4f7824e6cfa04.png",
+    "static/media/avatar.png": "/static/media/avatar.27ad4498bbd8a3194841.png",
+    "static/media/code.png": "/static/media/code.569da3659c41a7c40aa0.png",
+    "static/media/html.png": "/static/media/html.0292c7dcb302142baa5e.png",
+    "static/media/icons8-zalo-480.png": "/static/media/icons8-zalo-480.8b31612857c517ac3d2b.png",
+    "index.html": "/index.html",
+    "main.0045d2bb.css.map": "/static/css/main.0045d2bb.css.map",
+    "main.6e392b9c.js.map": "/static/js/main.6e392b9c.js.map",
+    "453.df772d1c.chunk.js.map": "/static/js/453.df772d1c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0045d2bb.css",
+    "static/js/main.6e392b9c.js"
+  ]
+}
