@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+/*-------------- Reset CSS----------- */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* -----------------------------CSS cho phần Header (phần đầu trang web) -----------------------------------*/
+#header{
+  width: 100%;
+  margin-bottom: 10px;
+  background: linear-gradient(269.88deg, #f59e0b 6.75%, #fb923c 95.85%);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  }
+
+/* CSS cho hiệu ứng chữ logo */
+  @property --k {
+	syntax: '<number>';
+	initial-value: 0;
+	inherits: false
+}
+#header .logo > a{
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 0px;
+    --k: 0;
+    place-self: center;
+    background: 
+    linear-gradient(90deg, 
+    hsl(calc(var(--k)*1turn), 95%, 65%), 
+    hsl(calc(var(--k)*1turn + 90deg), 95%, 65%));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font: 900 clamp(.875em, 7.25vw, 5em) arial black, sans-serif;
+    filter: url(#f);
+    text-align: center;
+    text-transform: uppercase;
+    animation: k 4s linear infinite;
+    font-size: 1.2rem;
+    font-family: 'Black Ops One', system-ui;
+}
+@keyframes k { to { --k: 1 } }
+
+/* CSS cho thanh header trên cùng */
+  .headerTop{
+    width: 100%;
+    background-color: #0f172a;
+    height: 60px;
+  }
+  .headerTop .navLinkHeader{
+    width: 100%;
+    height: 100%;
+  }
+  .headerTop .navLinkHeader ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .headerTop ul li{
+    margin: 0 2vw;
+    display: flex;
+    align-items: center;
+    height: 60px;
+  }
+  .headerTop ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+  }
+  .headerTop ul li:first-child > a{
+    font-size: x-large;
+    font-weight: bold;
+    position: absolute;
+    left: 2vw;
+
+    font-family: 'Bungee Spice', sans-serif;
+  }
+  .headerTop ul li:last-child a{
+    padding: 4px 6px;
+    border: 1px solid #fb923c;
+    border-radius: 8px;
+    position: absolute;
+    right: 2vw;
+  }
+  .headerTop ul li:last-child a::after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 4px solid #ffffff;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+  }
+/* -----------------------------CSS cho phần Main (phần thân trang web) -----------------------------------*/
+#main{
+  margin: 80px 0 60px;
+  width: 100%;
+  padding: 4px;
+}
+table{
+  margin: auto;
+  border-collapse: collapse;
+}
+th, td{
+  border: 1px solid black;
+  padding: 10px;
+}
+/* -----------------------------CSS cho phần Footer (phần cuối trang web) ---------------------------------*/
+#footer{
+  width: 100%;
+  height: 40px;
+  background-color: rgb(15, 23, 42);
+  position: fixed;
+  bottom: 0;
+  color: white;
+  z-index: 20;
+}
+.navFooter{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2vw;
+}
+/* .nav-footer ul{
+  
+} */
+.navFooter ul li{
+  display: inline-block;
+  height: 100%;
+}
+
+/* CSS cho các class phụ */
+.iconSize{
+    width: 28px;
+    height: 28px;
+}
+
+/* ------------------------------------------Responsive -------------------------------------------*/
+/* @media screen {  */
+  /* Được dùng khi không ăn responsive */
+/* } */
+
+/* Màn hình Desktop cực lớn */
+@media screen and (min-width: 1920px){
+
+}
+/* Màn hình Desktop lớn */
+@media screen and (max-width: 1492px){
+
+}
+/* Màn hình Desktop */
+@media screen and (max-width: 1200px){
+
+}
+/* Màn hình Tablet lớn */
+@media screen and (max-width: 992px){
+
+}
+/* Màn hình Tablet */
+@media screen and (max-width: 768px) {
+
+}
+/* Màn hình Mobile */
+@media screen and (max-width : 534px){
+
+}
+/* Màn hình Mobile cực nhỏ */
+@media screen and (max-width : 320px){
+
+}

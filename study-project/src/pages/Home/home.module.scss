@@ -1,0 +1,590 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* Header */
+#header {
+    width: 100%;
+    background: linear-gradient(269.88deg, #f59e0b 6.75%, #fb923c 95.85%);
+    position: fixed;
+    top: 0;
+    z-index: 300;
+    height: 60px;
+    // opacity: 0;
+    border-bottom: 2px solid white;
+}
+@property --k {
+	syntax: '<number>';
+	initial-value: 0;
+	inherits: false
+}
+/* Logo animation */
+#header .logo > a {
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding: 0px;
+  --k: 0;
+  place-self: center;
+  background: 
+  linear-gradient(90deg, 
+  hsl(calc(var(--k)*1turn), 95%, 65%), 
+  hsl(calc(var(--k)*1turn + 90deg), 95%, 65%));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font: 900 clamp(.875em, 7.25vw, 5em) arial black, sans-serif;
+  filter: url(#f);
+  text-align: center;
+  text-transform: uppercase;
+  animation: k 4s linear infinite;
+  font-size: 1.2rem;
+  font-family: 'Black Ops One', system-ui;
+}
+@keyframes k { to { --k: 1 } }
+/* Header top */
+.headerTop {
+    width: 100%;
+    background-color: #0f172a;
+    height: 100%;
+}
+
+.navLinkHeader {
+    width: 100%;
+    height: 100%;
+}
+
+.navLinkHeader ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    // justify-content: center;
+    align-items: center;
+}
+
+.navLinkHeader ul li {
+    margin: 0 2vw;
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.navLinkHeader ul li:nth-child(2)::after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 4px solid #ffffff;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+.navLinkHeader ul li:nth-child(2):hover::after {
+    transform: rotate(180deg);
+}
+.navService{
+    position: absolute;
+    top: 50px;
+    background-color: white;
+    border-radius: 4px;
+    padding: 8px;
+    visibility: hidden;
+}
+.navLinkHeader ul li:nth-child(2):hover .navService{
+    visibility: visible;
+    animation: moveT 0.3s ease forwards;
+}
+@keyframes moveT {
+    0%{
+        transform: translateY(24px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.navService > a{
+    padding: 4px;
+    color: black;
+    display: block;
+}
+.navService a:hover{
+    color: blue;
+}
+.navLinkHeader ul li:nth-child(6) a::after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 4px solid #ffffff;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.navLinkHeader ul li>a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+}
+
+.navLinkHeader ul li:first-child > a {
+    font-size: x-large;
+    font-weight: bold;
+    font-family: 'Bungee Spice', sans-serif;
+}
+
+.navLinkHeader ul li:nth-last-child(2) a {
+    padding: 4px 6px;
+    border: 1px solid #f97316;
+    border-radius: 8px;
+}
+
+/* Search bar */
+.navLinkHeader .group {
+    width: 100%;
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+    // width: 300px;
+    width: 360px;
+}
+
+.navLinkHeader .group .inputDesktop {
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    width: 100%;
+    padding-left: 2.5rem;
+    outline: none;
+    background: linear-gradient(180deg, rgb(56, 56, 56) 0%, rgb(36, 36, 36) 66%, rgb(41, 41, 41) 100%);
+    color: #fff;
+    transition: .3s ease;
+    border: 2px solid;
+    border-image: conic-gradient(#00F260, #0575E6, #64f38c) 1;
+}
+
+.inputDesktop::placeholder {
+    color: #fff;
+}
+
+.inputDesktop:focus::placeholder {
+    color: #999;
+}
+
+.iconSearch {
+    position: absolute;
+    left: 1rem;
+    fill: #fff;
+    width: 1rem;
+    height: 1rem;
+}
+
+.container .iconMobileSm {
+    position: absolute;
+    width: var(--sizeButton);
+    height: var(--sizeButton);
+    top: 0;
+    left: 0;
+    padding: 8px;
+    pointer-events: none;
+}
+
+.container .iconMobileSm img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Button menu */
+.buttonMenu {
+    background-color: #0f172a;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+ // CSS tổng thể phần giữa trang web
+.appWithSidebar{
+    display: flex;
+    width: 100%;
+    margin-top: 61px;
+    background-color: #0f172a;
+}
+.homeSidebar{
+    width: 7%;
+    height: auto;
+    color: white;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    top: 61px;
+    z-index: 1;
+}
+
+
+/* Main */
+#main {
+    width: 93%;
+    background-color: white;
+    margin-left: 7%;
+}
+
+/* CSS cho phần danh sách ngôn ngữ */
+.listLanguage{
+    overflow-x: auto;
+    background-color: #e0e0e0;
+    border-bottom: 1px solid #7fff00;
+}
+.listLanguage::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+}
+
+.listLanguage::-webkit-scrollbar-thumb {
+    background-color: #7fff00;
+}
+
+.listLanguage::-webkit-scrollbar-track {
+    background-color: #111;
+}
+.navLanguage ul{
+    display: flex;
+    margin: 4px;
+    // margin-left: 4px;
+}
+.navLanguage ul li{
+    display: block;
+    min-width: 96px;
+    margin: 0 4px;
+    padding: 4px;
+    border: 1px solid #dcdcdc;
+    border-radius: 999px;
+    font-weight: bold;
+    background-color: white;
+    text-align: center;
+}
+
+.navLanguage ul li:hover{
+    cursor: pointer;
+    border: 1px solid blue;
+}
+
+/* CSS cho phần menu-top */
+.menuTop{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    // background-color: #0f172a;
+    background-color: #333;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.7rem;
+    position: sticky;
+    top: 60px;
+    z-index: 200;
+    border-left: 2px solid white ;
+    border-right: 2px solid white ;
+    border-radius: 4px;
+    opacity: 0.97;
+}
+.menuTop > a{
+    color: white;
+    text-align: center;
+    font-weight: 600;
+}
+.menuTop > a:hover{
+    color: #7fff00;
+}
+.menuTop .navItem{
+    padding: 0.4rem;
+}
+.menuTop .boxIcon{ 
+    text-align: center;
+    /* background-color: yellow; */
+}
+.menuTop .boxIcon img{
+    border-radius: 50%;
+}
+.menuTop .md.hydrated{
+    width: 40px;
+    height: 40px;
+}
+
+
+/* CSS cho phần thùng chứa khóa học */
+.container {
+    /* margin-top: 20px; */
+    padding: 1vw;
+    background-color: white;
+}
+
+.course {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 8px 0;
+    padding: 0 1%;
+}
+
+.nameCourse {
+    width: 24%;
+    padding: 4px;
+    margin: 0.5%;
+    box-shadow: 0 1px 2px #666;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 0.4rem;
+    background-color: white;
+}
+.nameCourse a{
+    color: #f97316;
+}
+.nameCourse img{
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    width: 100%;
+    height: 100%;
+}
+.nameCourse img:hover{
+    transform: translateY(-1px) scale(1.01);
+}
+.nameCourse:hover{
+    box-shadow: 0 2px 3px rgb(104, 104, 104);
+}
+
+/* Footer */
+#footer {
+    background-color: #f1f5f9;
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.footerContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 5vw;
+    padding-top: 4vh;
+}
+
+.footerContent {
+    width: 300px;
+}
+
+.footerContent h3 {
+    color: #f97316;
+}
+
+.footerContent ul {
+    margin-top: 6px;
+    margin-bottom: 20px;
+}
+.footerContent ul li{
+    line-height: 1.5rem;
+}
+.footerContent a {
+    color: black;
+}
+
+.footerContent a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.footerContent .linkInfor {
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerContent img {
+    width: 30px;
+    height: 30px;
+}
+
+.footerBottom {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #e5e7eb;
+}
+
+/* Scroll to top button */
+.scrollTop {
+    display: none;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    z-index: 200;
+    border-radius: 30px;
+}
+
+.showScroll {
+    display: block;
+}
+
+.btnTop {
+    width: 30px;
+    height: 47px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    border: none;
+    outline: 2px solid yellowgreen;
+    box-shadow: 0px 0px 10px yellowgreen;
+}
+
+.scroll {
+    width: 7px;
+    height: 12px;
+    border-radius: 10px;
+    background-color: yellow;
+    box-shadow: 0px 0px 10px white;
+    animation: scroll4013 0.5s linear infinite;
+    transform: translateY(40%);
+}
+
+/* CSS class phụ */
+.iconSize{
+    width: 28px;
+}
+.sidebarClose{
+    // color: #00F260;
+    cursor: pointer;
+    color: #cbd5e1;
+    background-color: #0f172a;
+    border: none;
+    position: fixed;
+    z-index: 1100;
+    padding: 2px 8px;
+    border-radius: 4px;
+    right: 12px;
+    top: 12px;
+    font-weight: bold;
+    font-size: 1.15rem;
+}
+
+/* Responsive */
+/* Large desktop screens */
+@media screen and (min-width: 1920px) {
+    /* Add styles here */
+}
+
+/* Large desktop screens */
+@media screen and (max-width: 1492px) {
+    /* Add styles here */
+    .navLinkHeader .nav li:first-child > a {
+        font-size: 1.2rem !important;
+    }
+}
+
+/* Desktop screens */
+@media screen and (max-width: 1200px) {
+    /* Add styles here */
+    .navLinkHeader .nav li:first-child > a {
+        font-size: 0 !important;
+    }
+
+    .headerTop .navLinkHeader ul {
+        justify-content: space-between;
+    }
+}
+
+/* Large tablets */
+@media print, screen and (max-width: 992px) {
+    .headerTop .navLinkHeader ul li:nth-child(3) {
+        display: none;
+    }
+    .headerTop .navLinkHeader ul li:nth-child(5) {
+        display: none;
+    }
+    .homeSidebar{
+        display: none;
+    }
+    #main{
+        width: 100%;
+        margin-left: 0;
+    }
+    .slider .list img{
+        width: 100vw;
+    }
+    .nameCourse {
+        width: 32.3%;
+    }
+    .navLinkHeader .nav li:first-child > a {
+        font-size: 1.2rem !important;
+    }
+    .navLinkHeader .group{
+        width: 280px;
+    }
+}
+
+/* Tablets */
+@media print, screen and (max-width: 768px) {
+    .slider {
+        height: 220px;
+    }
+    .headerTop .navLinkHeader ul li:nth-child(2) {
+        display: none;
+    }
+    .headerTop .navLinkHeader ul li:nth-child(6) {
+        display: none;
+    }
+
+    .navLinkHeader .group{
+        width: 310px;
+    }
+
+}
+
+/* Mobile */
+@media print, screen and (max-width: 534px) {
+    .headerTop ul li:first-child {
+        font-size: large;
+        white-space: nowrap;
+    }
+    .headerTop ul {
+        justify-content: space-between;
+    }
+    #main{
+        padding: 0;
+    }
+    .navLinkHeader ul li:nth-child(4) {
+        width: 100%;
+    }
+    .navLinkHeader .group {
+        width: min(300px, 100%);
+        width: 150%;
+    }
+    .nameCourse {
+        width: 49%;
+    }
+    .navLinkHeader .nav li:first-child > a {
+        font-size: 0 !important;
+    }
+    
+}
+
+/* Extra small mobile devices */
+@media screen and (max-width: 320px) {
+    .nameCourse {
+        width: 100%;
+    }
+}
